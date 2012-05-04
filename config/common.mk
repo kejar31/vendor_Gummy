@@ -3,8 +3,6 @@ PRODUCT_BRAND ?= gummy
 SUPERUSER_EMBEDDED := true
 SUPERUSER_PACKAGE_PREFIX := com.android.settings.gummy.superuser
 
--include vendor/cm-priv/keys.mk
-
 # Allow alternative overlay package with additional/alternative defaults, apps, scripts, etc...host user name dependant
 HOST_CHECK := $(shell hostname)
 ifeq ($(HOST_CHECK), cphelps76-HP-Pavilion-dv7)
@@ -146,6 +144,9 @@ PRODUCT_COPY_FILES += \
 # This is Gummy!
 PRODUCT_COPY_FILES += \
     vendor/Gummy/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+
+# T-Mobile theme engine
+include vendor/Gummy/config/themes_common.mk
 
 # Required Gummy packages
 PRODUCT_PACKAGES += \
