@@ -9,14 +9,22 @@ include vendor/Gummy/config/tg_audio.mk
 
 # Optional Gummy packages
 PRODUCT_PACKAGES += \
-    HoloSpiralWallpaper \
-    MagicSmokeWallpapers \
-    NoiseField \
     Galaxy4 \
+    HoloSpiralWallpaper \
     LiveWallpapers \
     LiveWallpapersPicker \
-    VisualizationWallpapers \
+    MagicSmokeWallpapers \
+    NoiseField \
     PhaseBeam \
     SunBeam \
     WaterBeam \
-    VideoEditor
+    VisualizationWallpapers \
+    PhotoTable
+
+PRODUCT_PACKAGES += \
+    VideoEditor \
+    libvideoeditor_jni \
+    libvideoeditor_core \
+    libvideoeditor_osal \
+    libvideoeditor_videofilters \
+    libvideoeditorplayer
