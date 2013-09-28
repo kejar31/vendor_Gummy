@@ -29,7 +29,7 @@ Getting Started
 To get started with Android/Team Gummy, you'll need to get
 familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
 
-To initialize your local repository using the CyanogenMod trees, use a command like this:
+To initialize your local repository using the Team Gummy trees, use a command like this:
 
     repo init -u https://github.com/TEAM-Gummy -b jb4.3
 
