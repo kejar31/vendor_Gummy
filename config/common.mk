@@ -1,8 +1,6 @@
-PRODUCT_BRAND ?= cyanogenmod
+PRODUCT_BRAND ?= gummy
 
 -include vendor/cm-priv/keys.mk
-SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.cyanogenmod.superuser
 
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
@@ -30,7 +28,7 @@ TARGET_BOOTANIMATION_SIZE := $(shell \
   fi )
 
 # get a sorted list of the sizes
-bootanimation_sizes := $(subst .zip,, $(shell ls vendor/cm/prebuilt/common/bootanimation))
+bootanimation_sizes := $(subst .zip,, $(shell ls vendor/Gummy/prebuilt/common/bootanimation))
 bootanimation_sizes := $(shell echo -e $(subst $(space),'\n',$(bootanimation_sizes)) | sort -rn)
 
 # find the appropriate size and set
@@ -46,10 +44,10 @@ $(eval TARGET_BOOTANIMATION_NAME := $(shell \
 endef
 $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size)))
 
-PRODUCT_BOOTANIMATION := vendor/cm/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
+PRODUCT_BOOTANIMATION := vendor/Gummy/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
 endif
 
-ifdef CM_NIGHTLY
+ifdef TG_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
 else
@@ -80,46 +78,46 @@ endif
 
 # Copy over the changelog to the device
 PRODUCT_COPY_FILES += \
-    vendor/cm/CHANGELOG.mkdn:system/etc/CHANGELOG-CM.txt
+    vendor/Gummy/CHANGELOG.mkdn:system/etc/CHANGELOG-TG.txt
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
-    vendor/cm/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
-    vendor/cm/prebuilt/common/bin/50-cm.sh:system/addon.d/50-cm.sh \
-    vendor/cm/prebuilt/common/bin/blacklist:system/addon.d/blacklist
+    vendor/Gummy/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
+    vendor/Gummy/prebuilt/common/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/Gummy/prebuilt/common/bin/50-tg.sh:system/addon.d/50-tg.sh \
+    vendor/Gummy/prebuilt/common/bin/blacklist:system/addon.d/blacklist
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/Gummy/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit
 
 # userinit support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+    vendor/Gummy/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
 
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
+    vendor/Gummy/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
-# CM-specific init file
+# Gummy-specific init file
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
+    vendor/Gummy/prebuilt/common/etc/init.local.rc:root/init.tg.rc
 
 # Compcache/Zram support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/bin/compcache:system/bin/compcache \
-    vendor/cm/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
+    vendor/Gummy/prebuilt/common/bin/compcache:system/bin/compcache \
+    vendor/Gummy/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/Gummy/proprietary/Term.apk:system/app/Term.apk \
+    vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
-    vendor/cm/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
-    vendor/cm/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
+    vendor/Gummy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
+    vendor/Gummy/prebuilt/common/media/PFFprec_600.emd:system/media/PFFprec_600.emd
 
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
@@ -129,18 +127,18 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is CM!
+# This is Gummy!
 PRODUCT_COPY_FILES += \
-    vendor/cm/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
+    vendor/Gummy/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/mkshrc:system/etc/mkshrc
+    vendor/Gummy/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # T-Mobile theme engine
-include vendor/cm/config/themes_common.mk
+include vendor/Gummy/config/themes_common.mk
 
-# Required CM packages
+# Required Gummy packages
 PRODUCT_PACKAGES += \
     Development \
     LatinIME \
@@ -148,35 +146,23 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     su
 
-# Optional CM packages
+# Optional Gummy packages
 PRODUCT_PACKAGES += \
     VoicePlus \
     VoiceDialer \
     SoundRecorder \
     Basic
 
-# Custom CM packages
+# Custom Gummy packages
 PRODUCT_PACKAGES += \
-    Trebuchet \
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
-    CMWallpapers \
-    Apollo \
-    CMUpdater \
-    CMFileManager \
-    LockClock \
-    CMAccount
-
-# CM Hardware Abstraction Framework
-PRODUCT_PACKAGES += \
-    org.cyanogenmod.hardware \
-    org.cyanogenmod.hardware.xml
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
-# Extra tools in CM
+# Extra tools in Gummy
 PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
@@ -211,52 +197,51 @@ PRODUCT_PACKAGES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 
-PRODUCT_VERSION_MAJOR = 10
-PRODUCT_VERSION_MINOR = 2
+PRODUCT_VERSION_MAJOR = 1
+PRODUCT_VERSION_MINOR = 0
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
-# Set CM_BUILDTYPE
-ifdef CM_NIGHTLY
-    CM_BUILDTYPE := NIGHTLY
+# Set Gummy_BUILDTYPE
+ifdef TG_NIGHTLY
+    TG_BUILDTYPE := NIGHTLY
 endif
-ifdef CM_EXPERIMENTAL
-    CM_BUILDTYPE := EXPERIMENTAL
+ifdef TG_EXPERIMENTAL
+    TG_BUILDTYPE := EXPERIMENTAL
 endif
-ifdef CM_RELEASE
-    CM_BUILDTYPE := RELEASE
+ifdef TG_RELEASE
+    TG_BUILDTYPE := RELEASE
 endif
 
-ifdef CM_BUILDTYPE
-    ifdef CM_EXTRAVERSION
+ifdef TG_BUILDTYPE
+    ifdef TG_EXTRAVERSION
         # Force build type to EXPERIMENTAL
-        CM_BUILDTYPE := EXPERIMENTAL
-        # Remove leading dash from CM_EXTRAVERSION
-        CM_EXTRAVERSION := $(shell echo $(CM_EXTRAVERSION) | sed 's/-//')
-        # Add leading dash to CM_EXTRAVERSION
-        CM_EXTRAVERSION := -$(CM_EXTRAVERSION)
+        TG_BUILDTYPE := EXPERIMENTAL
+        # Remove leading dash from TG_EXTRAVERSION
+        TG_EXTRAVERSION := $(shell echo $(TG_EXTRAVERSION) | sed 's/-//')
+        # Add leading dash to TG_EXTRAVERSION
+        TG_EXTRAVERSION := -$(TG_EXTRAVERSION)
     endif
 else
-    # If CM_BUILDTYPE is not defined, set to UNOFFICIAL
-    CM_BUILDTYPE := UNOFFICIAL
-    CM_EXTRAVERSION :=
+    # If TG_BUILDTYPE is not defined, set to UNOFFICIAL
+    TG_BUILDTYPE := UNOFFICIAL
+    TG_EXTRAVERSION :=
 endif
 
-ifdef CM_RELEASE
-    CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(CM_BUILD)
+ifdef TG_RELEASE
+    TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(TG_BUILD)
 else
     ifeq ($(PRODUCT_VERSION_MINOR),0)
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+        TG_VERSION := $(PRODUCT_VERSION_MAJOR)-$(shell date -u +%Y%m%d)-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
     else
-        CM_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(CM_BUILDTYPE)-$(CM_BUILD)$(CM_EXTRAVERSION)
+        TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
     endif
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-  ro.cm.version=$(CM_VERSION) \
-  ro.modversion=$(CM_VERSION)
+  ro.tg.version=$(TG_VERSION) \
+  ro.modversion=$(TG_VERSION)
 
--include vendor/cm/sepolicy/sepolicy.mk
--include $(WORKSPACE)/hudson/image-auto-bits.mk
+-include vendor/Gummy/sepolicy/sepolicy.mk
