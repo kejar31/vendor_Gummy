@@ -1,1 +1,1 @@
-add_lunch_combo tg_toro-userdebug
+# WE NEED TO ADD DEVICES !!!
