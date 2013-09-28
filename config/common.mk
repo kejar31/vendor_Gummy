@@ -105,11 +105,6 @@ PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/bin/compcache:system/bin/compcache \
     vendor/Gummy/prebuilt/common/bin/handle_compcache:system/bin/handle_compcache
 
-# Terminal Emulator
-PRODUCT_COPY_FILES +=  \
-    vendor/Gummy/proprietary/Term.apk:system/app/Term.apk \
-    vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
-
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
     vendor/Gummy/prebuilt/common/media/LMprec_508.emd:system/media/LMprec_508.emd \
