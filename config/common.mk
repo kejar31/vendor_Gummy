@@ -76,10 +76,6 @@ ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += ro.adb.secure=1
 endif
 
-# Copy over the changelog to the device
-PRODUCT_COPY_FILES += \
-    vendor/Gummy/CHANGELOG.mkdn:system/etc/CHANGELOG-TG.txt
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
