@@ -1,1 +1,2 @@
-# WE NEED TO ADD DEVICES !!!
+add_lunch_combo tg_jflteatt-userdebug
+
