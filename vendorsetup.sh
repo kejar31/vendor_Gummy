@@ -1,2 +1,3 @@
 add_lunch_combo tg_jflteatt-userdebug
+add_lunch_combo tg_mako-userdebug
 
