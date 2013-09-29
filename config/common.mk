@@ -107,8 +107,8 @@ PRODUCT_COPY_FILES += \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/Gummy/proprietary/Term.apk:system/app/Term.apk \
-    vendor/Gummy/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/Gummy/prebuilt/gummy/app/Term.apk:system/app/Term.apk \
+    vendor/Gummy/prebuilt/gummy/lib/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
