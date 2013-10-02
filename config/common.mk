@@ -72,7 +72,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
-    persist.sys.root_access=1
+    dalvik.vm.dexopt-data-only=1
 
 # Enable ADB authentication and root
 ifneq ($(TARGET_BUILD_VARIANT),eng)
@@ -154,7 +154,8 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     VoiceDialer \
     SoundRecorder \
-    Basic
+    Basic \
+    Torch
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
