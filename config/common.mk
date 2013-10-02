@@ -223,18 +223,13 @@ ifdef TG_BUILDTYPE
     ifdef TG_EXTRAVERSION
         # Force build type to EXPERIMENTAL
         TG_BUILDTYPE := EXPERIMENTAL
-        # Remove leading dash from TG_EXTRAVERSION
-        TG_EXTRAVERSION := $(shell echo $(TG_EXTRAVERSION) | sed 's/-//')
-        # Add leading dash to TG_EXTRAVERSION
-        TG_EXTRAVERSION := -$(TG_EXTRAVERSION)
     endif
 else
     # If TG_BUILDTYPE is not defined, set to UNOFFICIAL
     TG_BUILDTYPE := UNOFFICIAL
-    TG_EXTRAVERSION :=
 endif
 
-TG_VERSION := "Gummy"-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
+TG_VERSION := "Gummy"-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tg.version=$(TG_VERSION) \
