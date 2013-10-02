@@ -234,18 +234,10 @@ else
     TG_EXTRAVERSION :=
 endif
 
-ifdef TG_RELEASE
-    TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODUCT_VERSION_MAINTENANCE)$(PRODUCT_VERSION_DEVICE_SPECIFIC)-$(TG_BUILD)
-else
-    ifeq ($(PRODUCT_VERSION_MINOR),0)
-        TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
-    else
-        TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
-    endif
-endif
+TG_VERSION := "Gummy"-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)-$(TG_BUILD)$(TG_EXTRAVERSION)
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tg.version=$(TG_VERSION) \
-  ro.modversion=Gummy-$(TG_VERSION)
+  ro.modversion=$(TG_VERSION)
 
 -include vendor/Gummy/sepolicy/sepolicy.mk
