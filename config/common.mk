@@ -1,7 +1,7 @@
 PRODUCT_BRAND ?= gummy
 
 SUPERUSER_EMBEDDED := true
-SUPERUSER_PACKAGE_PREFIX := com.android.settings.demented.superuser
+SUPERUSER_PACKAGE_PREFIX := com.android.settings.gummy.superuser
 
 -include vendor/cm-priv/keys.mk
 
