@@ -155,7 +155,9 @@ PRODUCT_PACKAGES += \
     VoiceDialer \
     SoundRecorder \
     Basic \
-    Torch
+    Torch \
+    Apollo \
+    LockClock
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
