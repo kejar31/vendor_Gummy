@@ -23,5 +23,5 @@ PRODUCT_PACKAGES += \
     LiveWallpapersPicker \
     VisualizationWallpapers \
     PhaseBeam \
-	SunBeam \
+    SunBeam \
     VideoEditor
