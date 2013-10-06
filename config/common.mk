@@ -163,19 +163,11 @@ PRODUCT_PACKAGES += \
 
 # Optional Gummy packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    VoiceDialer \
     SoundRecorder \
     Basic \
     Torch \
     Apollo \
     LockClock
-
-# Custom Gummy packages
-PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
