@@ -155,7 +155,6 @@ include vendor/Gummy/config/themes_common.mk
 
 # Required Gummy packages
 PRODUCT_PACKAGES += \
-    Development \
     LatinIME \
     Superuser \
     BluetoothExt \
