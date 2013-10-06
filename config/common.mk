@@ -169,6 +169,10 @@ PRODUCT_PACKAGES += \
     Apollo \
     LockClock
 
+# Custom Gummy packages
+PRODUCT_PACKAGES += \
+    MusicFX
+
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
 
