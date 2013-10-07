@@ -155,7 +155,6 @@ include vendor/Gummy/config/themes_common.mk
 
 # Required Gummy packages
 PRODUCT_PACKAGES += \
-    Development \
     LatinIME \
     Superuser \
     BluetoothExt \
@@ -163,8 +162,6 @@ PRODUCT_PACKAGES += \
 
 # Optional Gummy packages
 PRODUCT_PACKAGES += \
-    VoicePlus \
-    VoiceDialer \
     SoundRecorder \
     Basic \
     Torch \
@@ -173,9 +170,7 @@ PRODUCT_PACKAGES += \
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
-    DSPManager \
-    libcyanogen-dsp \
-    audio_effects.conf \
+    MusicFX
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
