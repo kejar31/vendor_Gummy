@@ -171,7 +171,7 @@ PRODUCT_PACKAGES += \
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
     MusicFX \
-    GummyPapers    
+    Gummypapers    
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
