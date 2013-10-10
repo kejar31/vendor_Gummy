@@ -58,10 +58,6 @@ $(foreach size,$(bootanimation_sizes), $(call check_and_set_bootanimation,$(size
 PRODUCT_BOOTANIMATION := vendor/Gummy/prebuilt/common/bootanimation/$(TARGET_BOOTANIMATION_NAME).zip
 endif
 
-# Adding bootanimation audio
-PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/common/media/boot_audio.mp3:system/media/boot_audio.mp3
-
 ifdef TG_NIGHTLY
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=cyanogenmodnightly
@@ -170,7 +166,8 @@ PRODUCT_PACKAGES += \
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
-    MusicFX
+    MusicFX \
+    Gummypapers    
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
