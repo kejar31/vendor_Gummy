@@ -162,7 +162,8 @@ PRODUCT_PACKAGES += \
     Basic \
     Torch \
     Apollo \
-    LockClock
+    LockClock \
+    InvertedGummy
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
