@@ -8,3 +8,4 @@ add_lunch_combo tg_jfltevzw-userdebug
 add_lunch_combo tg_jfltetmo-userdebug
 add_lunch_combo tg_mako-userdebug
 add_lunch_combo tg_m7ul-userdebug
+add_lunch_combo tg_toro-userdebug
