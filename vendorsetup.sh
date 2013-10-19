@@ -14,3 +14,4 @@ add_lunch_combo tg_vs920-userdebug
 add_lunch_combo tg_maguro-userdebug
 add_lunch_combo tg_flo-userdebug
 add_lunch_combo tg_m7vzw-userdebug
+add_lunch_combo tg_e980-userdebug
