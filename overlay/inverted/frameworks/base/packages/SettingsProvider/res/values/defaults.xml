@@ -39,4 +39,7 @@
     <!-- Default setting for the text battery -->
     <integer name="def_text_battery">1</integer>
 
+    <!-- Default setting for menu overflow button -->
+    <integer name="def_menu_overflow">1</integer>
+
 </resources>
