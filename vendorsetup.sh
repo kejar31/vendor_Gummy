@@ -5,6 +5,7 @@ add_lunch_combo tg_d2spr-userdebug
 add_lunch_combo tg_d2tmo-userdebug
 add_lunch_combo tg_d2usc-userdebug
 add_lunch_combo tg_d2vzw-userdebug
+add_lunch_combo tg_i605-userdebug
 add_lunch_combo tg_jflteatt-userdebug
 add_lunch_combo tg_jfltecsp-userdebug
 add_lunch_combo tg_jfltecri-userdebug
@@ -15,6 +16,9 @@ add_lunch_combo tg_jfltevzw-userdebug
 add_lunch_combo tg_jfltetmo-userdebug
 add_lunch_combo tg_mako-userdebug
 add_lunch_combo tg_m7ul-userdebug
+add_lunch_combo tg_t0lte-userdebug
+add_lunch_combo tg_t0lteatt-userdebug
+add_lunch_combo tg_t0ltetmo-userdebug
 add_lunch_combo tg_toro-userdebug
 add_lunch_combo tg_p930-userdebug
 add_lunch_combo tg_vs920-userdebug
