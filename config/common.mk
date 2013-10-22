@@ -147,10 +147,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/Gummy/config/permissions/com.cyanogenmod.android.xml:system/etc/permissions/com.cyanogenmod.android.xml
 
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/Gummy/prebuilt/common/etc/mkshrc:system/etc/mkshrc
-
 # Required Gummy packages
 PRODUCT_PACKAGES += \
     LatinIME \
