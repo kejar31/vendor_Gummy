@@ -5,6 +5,7 @@ add_lunch_combo tg_d2spr-userdebug
 add_lunch_combo tg_d2tmo-userdebug
 add_lunch_combo tg_d2usc-userdebug
 add_lunch_combo tg_d2vzw-userdebug
+add_lunch_combo tg_grouper-userdebug
 add_lunch_combo tg_jflteatt-userdebug
 add_lunch_combo tg_jfltecsp-userdebug
 add_lunch_combo tg_jfltecri-userdebug
