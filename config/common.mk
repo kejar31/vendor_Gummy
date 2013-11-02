@@ -153,7 +153,6 @@ include vendor/Gummy/config/themes_common.mk
 PRODUCT_PACKAGES += \
     LatinIME \
     Superuser \
-    BluetoothExt \
     su
 
 # Optional Gummy packages
