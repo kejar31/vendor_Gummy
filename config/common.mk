@@ -161,8 +161,7 @@ PRODUCT_PACKAGES += \
     SoundRecorder \
     Basic \
     Torch \
-    Apollo \
-    LockClock
+    Apollo
 
 # Custom Gummy packages
 PRODUCT_PACKAGES += \
