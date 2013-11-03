@@ -18,7 +18,7 @@ SUPERUSER_PACKAGE_PREFIX := com.android.settings.gummy.superuser
 ifneq ($(TARGET_BOOTANIMATION_NAME),)
 TARGET_SCREEN_DIMENSIONS := $(subst -, $(space), $(subst x, $(space), $(TARGET_BOOTANIMATION_NAME)))
 ifeq ($(TARGET_SCREEN_WIDTH),)
-TARGET_SCREEN_WIDTH := $(word 2, $(TARGET_SCREEN_DIMENSIONS))
+TARGET_SCREEN_WIDTH := $(word 2, $(TARGET_SCREEN_DIMENSIONS))the
 endif
 ifeq ($(TARGET_SCREEN_HEIGHT),)
 TARGET_SCREEN_HEIGHT := $(word 3, $(TARGET_SCREEN_DIMENSIONS))
@@ -30,7 +30,7 @@ ifneq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
 # clear TARGET_BOOTANIMATION_NAME in case it was set for CM9 purposes
 TARGET_BOOTANIMATION_NAME :=
 
-# determine the smaller dimension
+# determine smaller dimension
 TARGET_BOOTANIMATION_SIZE := $(shell \
   if [ $(TARGET_SCREEN_WIDTH) -lt $(TARGET_SCREEN_HEIGHT) ]; then \
     echo $(TARGET_SCREEN_WIDTH); \
@@ -145,9 +145,6 @@ PRODUCT_COPY_FILES += \
 # Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/etc/mkshrc:system/etc/mkshrc
-
-# T-Mobile theme engine
-include vendor/Gummy/config/themes_common.mk
 
 # Required Gummy packages
 PRODUCT_PACKAGES += \
