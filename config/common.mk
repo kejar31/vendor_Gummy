@@ -6,12 +6,12 @@ SUPERUSER_PACKAGE_PREFIX := com.android.settings.gummy.superuser
 -include vendor/cm-priv/keys.mk
 
 # Allow alternative overlay package with additional/alternative defaults, apps, scripts, etc...host user name dependant
-#HOST_CHECK := $(shell hostname)
-#ifeq ($(HOST_CHECK), cphelps76-HP-Pavilion-dv7)
-#    PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/inverted
-#else
+HOST_CHECK := $(shell hostname)
+ifeq ($(HOST_CHECK), cphelps76-HP-Pavilion-dv7)
+    PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/inverted
+else
     PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
-#endif
+endif
 
 # To deal with CM9 specifications
 # TODO: remove once all devices have been switched
