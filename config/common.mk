@@ -243,5 +243,3 @@ TG_VERSION := "Gummy"-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tg.version=$(TG_VERSION) \
   ro.modversion=$(TG_VERSION)
-
--include vendor/Gummy/sepolicy/sepolicy.mk
