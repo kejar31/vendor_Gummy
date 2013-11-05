@@ -83,6 +83,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1 \
     dalvik.vm.dexopt-data-only=1
 
+# Enable gesture typing
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so 
+
 # Enable ADB authentication and root
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += \
