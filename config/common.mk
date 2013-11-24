@@ -164,6 +164,7 @@ PRODUCT_PACKAGES += \
 
 # Extra tools in Gummy
 PRODUCT_PACKAGES += \
+    libsepol \
     openvpn \
     e2fsck \
     mke2fs \
