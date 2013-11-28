@@ -1,10 +1,10 @@
 #
 # This policy configuration will be used by all products that
-# inherit from CM
+# inherit from Gummy
 #
 
 BOARD_SEPOLICY_DIRS += \
-    vendor/cm/sepolicy
+    vendor/Gummy/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file.te \
