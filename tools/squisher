@@ -46,10 +46,14 @@ unzip $QUIET $OTAPACKAGE
 echo
 
 # Move all apks to the same directory so xargs can
-# use also with framework-res.apk. This allow process
-# framework-res.apk in parallel with other apks
+# also be used with priv-app and framework-res.apk.
+# This will allow all apks to be processed in parallel.
+cd $REPACK/ota/system/priv-app
+ls * > /tmp/priv-app.txt
+cd $REPACK/ota
 mkdir -p $REPACK/parallel
 cd $REPACK/parallel
+cp $REPACK/ota/system/priv-app/*.apk .
 cp $REPACK/ota/system/framework/framework-res.apk .
 cp $REPACK/ota/system/app/*.apk .
 
@@ -58,11 +62,15 @@ find ./ -name \*.apk | $XARGS $OPTICHARGER
 
 # Move optimized apks to repack directory
 mv -f $REPACK/parallel/framework-res.apk $REPACK/ota/system/framework/framework-res.apk
+for FILE in `egrep -v '(^#|^$)' /tmp/priv-app.txt`; do
+  mv -f $REPACK/parallel/$FILE $REPACK/ota/system/priv-app/
+done
 mv -f $REPACK/parallel/*.apk $REPACK/ota/system/app/
 
 # Return to directory
 cd $REPACK/ota
 rm -rf $REPACK/parallel
+rm -f /tmp/priv-app.txt
 )
 
 # Fix build.prop
