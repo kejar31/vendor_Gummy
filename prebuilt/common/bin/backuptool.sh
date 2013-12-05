@@ -5,7 +5,7 @@
 
 export C=/tmp/backupdir
 export S=/system
-export V="Gummy-2.0-*"
+export V=2.0
 
 # Preserve /system/addon.d in /tmp/addon.d
 preserve_addon_d() {
