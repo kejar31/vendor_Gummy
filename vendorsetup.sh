@@ -31,6 +31,7 @@ add_lunch_combo tg_toro-userdebug
 add_lunch_combo tg_toroplus-userdebug
 add_lunch_combo tg_umts_spyder-userdebug
 add_lunch_combo tg_vs920-userdebug
+add_lunch_combo tg_vs980-userdebug
 add_lunch_combo tg_xt897-userdebug
 add_lunch_combo tg_xt907-userdebug
 add_lunch_combo tg_xt925-userdebug
