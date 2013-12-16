@@ -1,3 +1,5 @@
+add_lunch_combo tg_d800-userdebug
+add_lunch_combo tg_d802-userdebug
 add_lunch_combo tg_d2att-userdebug
 add_lunch_combo tg_d2cri-userdebug
 add_lunch_combo tg_d2mtr-userdebug
