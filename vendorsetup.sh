@@ -9,6 +9,7 @@ add_lunch_combo tg_d2usc-userdebug
 add_lunch_combo tg_d2vzw-userdebug
 add_lunch_combo tg_e980-userdebug
 add_lunch_combo tg_encore-userdebug
+add_lunch_combo tg_evita-userdebug
 add_lunch_combo tg_flo-userdebug
 add_lunch_combo tg_grouper-userdebug
 add_lunch_combo tg_hammerhead-userdebug
