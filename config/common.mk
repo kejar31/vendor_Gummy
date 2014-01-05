@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
 
 # Optional Gummy packages
 PRODUCT_PACKAGES += \
-    SoundRecorder \
     Basic \
     libemoji \
     Apollo \
@@ -170,7 +169,6 @@ PRODUCT_PACKAGES += \
     mke2fs \
     tune2fs \
     bash \
-    vim \
     nano \
     htop \
     powertop \
