@@ -158,7 +158,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SoundRecorder \
     Basic \
-    Torch \
     libemoji \
     Apollo \
     LockClock \
