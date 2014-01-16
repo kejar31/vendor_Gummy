@@ -7,6 +7,9 @@ $(call inherit-product, frameworks/base/data/videos/VideoPackage2.mk)
 # Include Gummy audio files
 include vendor/Gummy/config/tg_audio.mk
 
+# Include Gummy LatinIME dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/dictionaries
+
 # Optional Gummy packages
 PRODUCT_PACKAGES += \
     Galaxy4 \

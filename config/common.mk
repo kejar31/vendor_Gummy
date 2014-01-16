@@ -197,7 +197,7 @@ PRODUCT_PACKAGES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
-PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/Gummy/overlay/common
 
 PRODUCT_VERSION_MAJOR = M
 PRODUCT_VERSION_MINOR = 1
