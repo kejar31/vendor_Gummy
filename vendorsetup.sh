@@ -47,6 +47,8 @@ add_lunch_combo tg_xt897-userdebug
 add_lunch_combo tg_xt907-userdebug
 add_lunch_combo tg_xt925-userdebug
 add_lunch_combo tg_xt926-userdebug
+add_lunch_combo tg_xt1032-userdebug
+add_lunch_combo tg_xt1034-userdebug
 add_lunch_combo tg_xt1053-userdebug
 add_lunch_combo tg_xt1055-userdebug
 add_lunch_combo tg_xt1056-userdebug
