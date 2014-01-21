@@ -28,8 +28,7 @@ add_lunch_combo tg_jfltetmo-userdebug
 add_lunch_combo tg_jfltexx-userdebug
 add_lunch_combo tg_maguro-userdebug
 add_lunch_combo tg_mako-userdebug
-add_lunch_combo tg_m7tmo-userdebug
-add_lunch_combo tg_m7ul-userdebug
+add_lunch_combo tg_m7-userdebug
 add_lunch_combo tg_m7vzw-userdebug
 add_lunch_combo tg_maserati-userdebug
 add_lunch_combo tg_mb886-userdebug
