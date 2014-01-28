@@ -35,6 +35,7 @@ add_lunch_combo tg_m7vzw-userdebug
 add_lunch_combo tg_maserati-userdebug
 add_lunch_combo tg_mb886-userdebug
 add_lunch_combo tg_p930-userdebug
+add_lunch_combo tg_skyrocket-userdebug
 add_lunch_combo tg_spyder-userdebug
 add_lunch_combo tg_t0lte-userdebug
 add_lunch_combo tg_t0lteatt-userdebug
