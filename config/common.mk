@@ -75,6 +75,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/lib/libjni_latinime.so:system/lib/libjni_latinime.so 
 
+ # init.d support
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
+    vendor/Gummy/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
+    vendor/Gummy/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
+    vendor/Gummy/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
+    vendor/Gummy/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/Gummy/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
+    vendor/Gummy/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
+    vendor/Gummy/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
+    vendor/Gummy/prebuilt/common/etc/init.d/09cron:system/etc/init.d/09cron \
+    vendor/Gummy/prebuilt/common/etc/init.d/10sdboost:system/etc/init.d/10sdboost \
+    vendor/Gummy/prebuilt/common/etc/init.d/98tweaks:system/etc/init.d/98tweaks \
+    vendor/Gummy/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
+    vendor/Gummy/prebuilt/common/etc/sysctl.conf:system/etc/sysctl.conf \
+    vendor/Gummy/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
+
+# Added xbin files
+PRODUCT_COPY_FILES += \
+    vendor/Gummy/prebuilt/common/xbin/zip:system/xbin/zip \
+    vendor/Gummy/prebuilt/common/xbin/zipalign:system/xbin/zipalign
+
 # Enable ADB authentication and root
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 ADDITIONAL_DEFAULT_PROPERTIES += \
