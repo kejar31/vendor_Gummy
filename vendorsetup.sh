@@ -13,7 +13,9 @@ add_lunch_combo tg_e980-userdebug
 add_lunch_combo tg_encore-userdebug
 add_lunch_combo tg_evita-userdebug
 add_lunch_combo tg_exhilarate-userdebug
+add_lunch_combo tg_falcon-userdebug
 add_lunch_combo tg_flo-userdebug
+add_lunch_combo tg_ghost-userdebug
 add_lunch_combo tg_grouper-userdebug
 add_lunch_combo tg_hammerhead-userdebug
 add_lunch_combo tg_hltetmo-userdebug
@@ -51,10 +53,3 @@ add_lunch_combo tg_xt897-userdebug
 add_lunch_combo tg_xt907-userdebug
 add_lunch_combo tg_xt925-userdebug
 add_lunch_combo tg_xt926-userdebug
-add_lunch_combo tg_xt1032-userdebug
-add_lunch_combo tg_xt1034-userdebug
-add_lunch_combo tg_xt1053-userdebug
-add_lunch_combo tg_xt1055-userdebug
-add_lunch_combo tg_xt1056-userdebug
-add_lunch_combo tg_xt1058-userdebug
-add_lunch_combo tg_xt1060-userdebug
