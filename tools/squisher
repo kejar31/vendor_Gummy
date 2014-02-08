@@ -81,7 +81,7 @@ $SED -i \
 
 # Determine what to name the new signed package
 MODVERSION=`sed -n -e'/ro\.tg\.version/s/^.*=//p' $OUT/system/build.prop`
-TARGET_PRODUCT_FINAL=`echo $TARGET_PRODUCT | cut -d '_' -f2`
+TARGET_PRODUCT_FINAL=`echo $TARGET_PRODUCT | cut -b 4-`
 echo $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
 OUTFILE=$OUT/$MODVERSION-$TARGET_PRODUCT_FINAL.zip
 
