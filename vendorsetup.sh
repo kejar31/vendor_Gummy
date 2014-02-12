@@ -3,6 +3,7 @@ add_lunch_combo tg_d800-userdebug
 add_lunch_combo tg_d801-userdebug
 add_lunch_combo tg_d802-userdebug
 add_lunch_combo tg_deb-userdebug
+add_lunch_combo tg_dlx-userdebug
 add_lunch_combo tg_e980-userdebug
 add_lunch_combo tg_encore-userdebug
 add_lunch_combo tg_evita-userdebug
