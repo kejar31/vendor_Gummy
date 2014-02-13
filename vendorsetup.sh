@@ -14,7 +14,6 @@ add_lunch_combo tg_ghost-userdebug
 add_lunch_combo tg_grouper-userdebug
 add_lunch_combo tg_hammerhead-userdebug
 add_lunch_combo tg_hlte-userdebug
-add_lunch_combo tg_hltetmo-userdebug
 add_lunch_combo tg_i605-userdebug
 add_lunch_combo tg_i9300-userdebug
 add_lunch_combo tg_jflteatt-userdebug
