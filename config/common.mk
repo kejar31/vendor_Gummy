@@ -168,10 +168,8 @@ PRODUCT_PACKAGES += \
     libemoji \
     Apollo \
     LockClock \
-    Launcher3
-
-# Custom Gummy packages
-PRODUCT_PACKAGES += \
+    Launcher3 \
+    GummyFileManager \
     MusicFX \
     Gummypapers    
 
