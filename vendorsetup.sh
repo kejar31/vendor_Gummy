@@ -16,15 +16,7 @@ add_lunch_combo tg_hammerhead-userdebug
 add_lunch_combo tg_hlte-userdebug
 add_lunch_combo tg_i605-userdebug
 add_lunch_combo tg_i9300-userdebug
-add_lunch_combo tg_jflteatt-userdebug
-add_lunch_combo tg_jfltecsp-userdebug
-add_lunch_combo tg_jfltecri-userdebug
-add_lunch_combo tg_jflteusc-userdebug
-add_lunch_combo tg_jfltecan-userdebug
-add_lunch_combo tg_jfltespr-userdebug
-add_lunch_combo tg_jfltevzw-userdebug
-add_lunch_combo tg_jfltetmo-userdebug
-add_lunch_combo tg_jfltexx-userdebug
+add_lunch_combo tg_jflte-userdebug
 add_lunch_combo tg_maguro-userdebug
 add_lunch_combo tg_mako-userdebug
 add_lunch_combo tg_m7-userdebug
