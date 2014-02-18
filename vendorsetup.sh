@@ -1,4 +1,4 @@
-add_lunch_combo tg_d2-userdebug
+add_lunch_combo tg_d2lte-userdebug
 add_lunch_combo tg_d800-userdebug
 add_lunch_combo tg_d801-userdebug
 add_lunch_combo tg_d802-userdebug
