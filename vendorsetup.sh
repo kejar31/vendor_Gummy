@@ -22,7 +22,7 @@ add_lunch_combo tg_mako-userdebug
 add_lunch_combo tg_m7-userdebug
 add_lunch_combo tg_m7vzw-userdebug
 add_lunch_combo tg_maserati-userdebug
-add_lunch_combo tg_mb886-userdebug
+add_lunch_combo tg_moto_msm8960-userdebug
 add_lunch_combo tg_p930-userdebug
 add_lunch_combo tg_skyrocket-userdebug
 add_lunch_combo tg_spyder-userdebug
@@ -36,7 +36,3 @@ add_lunch_combo tg_toroplus-userdebug
 add_lunch_combo tg_umts_spyder-userdebug
 add_lunch_combo tg_vs920-userdebug
 add_lunch_combo tg_vs980-userdebug
-add_lunch_combo tg_xt897-userdebug
-add_lunch_combo tg_xt907-userdebug
-add_lunch_combo tg_xt925-userdebug
-add_lunch_combo tg_xt926-userdebug
