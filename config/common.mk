@@ -172,7 +172,8 @@ PRODUCT_PACKAGES += \
     GummyFileManager \
     MusicFX \
     Gummypapers \
-    GummyStartupService
+    GummyStartupService \
+    DSPManager
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
