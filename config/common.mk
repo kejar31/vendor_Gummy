@@ -215,8 +215,8 @@ PRODUCT_PACKAGES += \
 # easy way to extend to add more packages
 -include vendor/extra/product.mk
 
-PRODUCT_VERSION_MAJOR = M
-PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MAJOR = M1
+PRODUCT_VERSION_MINOR = 2
 PRODUCT_VERSION_MAINTENANCE = 0-RC0
 
 # Set Gummy_BUILDTYPE
