@@ -83,7 +83,7 @@ $SED -i \
 MODVERSION=`sed -n -e'/ro\.tg\.version/s/^.*=//p' $OUT/system/build.prop`
 TARGET_PRODUCT_FINAL=`echo $TARGET_PRODUCT | cut -b 4-`
 echo $CL_CYN"MODVERSION: $MODVERSION"$CL_RST
-OUTFILE=$OUT/$MODVERSION-$TARGET_PRODUCT_FINAL.zip
+OUTFILE=$OUT/Gummy-$MODVERSION-$TARGET_PRODUCT_FINAL.zip
 
 # Delete unnecessary binaries
 ( cd $REPACK/ota/system/bin; echo $DELETE_BINS | xargs rm -f; )
