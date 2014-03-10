@@ -10,7 +10,6 @@ add_lunch_combo tg_evita-userdebug
 add_lunch_combo tg_exhilarate-userdebug
 add_lunch_combo tg_falcon-userdebug
 add_lunch_combo tg_flo-userdebug
-add_lunch_combo tg_ghost-userdebug
 add_lunch_combo tg_grouper-userdebug
 add_lunch_combo tg_hammerhead-userdebug
 add_lunch_combo tg_hlte-userdebug
@@ -23,6 +22,7 @@ add_lunch_combo tg_m7-userdebug
 add_lunch_combo tg_m7vzw-userdebug
 add_lunch_combo tg_maserati-userdebug
 add_lunch_combo tg_moto_msm8960-userdebug
+add_lunch_combo tg_moto_msm8960dt-userdebug
 add_lunch_combo tg_p930-userdebug
 add_lunch_combo tg_skyrocket-userdebug
 add_lunch_combo tg_spyder-userdebug
