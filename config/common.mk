@@ -79,10 +79,10 @@ PRODUCT_COPY_FILES += \
  # init.d support
 PRODUCT_COPY_FILES += \
     vendor/Gummy/prebuilt/common/bin/sysinit:system/bin/sysinit \
-    vendor/Gummy/prebuilt/common/etc/init.d/00check:system/etc/init.d/00check \
-    vendor/Gummy/prebuilt/common/etc/init.d/01zipalign:system/etc/init.d/01zipalign \
-    vendor/Gummy/prebuilt/common/etc/init.d/02sysctl:system/etc/init.d/02sysctl \
-    vendor/Gummy/prebuilt/common/etc/init.d/03firstboot:system/etc/init.d/03firstboot \
+    vendor/Gummy/prebuilt/common/etc/init.d/01check:system/etc/init.d/01check \
+    vendor/Gummy/prebuilt/common/etc/init.d/02zipalign:system/etc/init.d/02zipalign \
+    vendor/Gummy/prebuilt/common/etc/init.d/03sysctl:system/etc/init.d/03sysctl \
+    vendor/Gummy/prebuilt/common/etc/init.d/04firstboot:system/etc/init.d/04firstboot \
     vendor/Gummy/prebuilt/common/etc/init.d/05freemem:system/etc/init.d/05freemem \
     vendor/Gummy/prebuilt/common/etc/init.d/06removecache:system/etc/init.d/06removecache \
     vendor/Gummy/prebuilt/common/etc/init.d/07fixperms:system/etc/init.d/07fixperms \
