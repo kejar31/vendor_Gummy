@@ -241,6 +241,9 @@ endif
 
 TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%m-%d-%y")-$(TG_BUILDTYPE)-$(TG_BUILD)
 
+# by default, do not update the recovery with system updates
+PRODUCT_PROPERTY_OVERRIDES += persist.sys.recovery_update=false
+
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tg.version=$(TG_VERSION) \
   ro.modversion=$(TG_VERSION) \
