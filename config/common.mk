@@ -243,4 +243,5 @@ TG_VERSION := $(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date +"%
 
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.tg.version=$(TG_VERSION) \
-  ro.modversion=$(TG_VERSION)
+  ro.modversion=$(TG_VERSION) \
+  ro.tg.release=$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)
