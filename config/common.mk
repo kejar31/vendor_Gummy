@@ -166,7 +166,7 @@ PRODUCT_PACKAGES += \
     libemoji \
     Apollo \
     LockClock \
-    Launcher3 \
+    Trebuchet \
     GummyFileManager \
     MusicFX \
     Gummypapers \
